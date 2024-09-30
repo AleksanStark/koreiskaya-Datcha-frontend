@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.nav_panel {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: cyan;
+  width: 100%;
+}
+
+.nav_panel_list {
+  display: flex;
+  gap: 28px;
+}
+
+.nav_panel_item {
+}

@@ -1,0 +1,13 @@
+.nav_panel {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: cyan;
+  width: 124px;
+}
+
+.nav_panel_list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}

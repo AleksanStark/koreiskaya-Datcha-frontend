@@ -1,0 +1,68 @@
+@media (max-width: 767.99px) {
+  .container {
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .info_img {
+    width: 320px;
+  }
+
+  .info_video {
+    width: 320px;
+  }
+
+  .info_btn {
+    cursor: pointer;
+  }
+
+  .info_download {
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.99px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .info_img {
+    width: 768px;
+  }
+
+  .info_video {
+    width: 768px;
+  }
+
+  .info_btn {
+    cursor: pointer;
+  }
+
+  .info_download {
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .info_img {
+    width: 1440px;
+  }
+
+  .info_video {
+    width: 1440px;
+  }
+
+  .info_btn {
+    cursor: pointer;
+  }
+
+  .info_download {
+  }
+}
