@@ -22,23 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
-			$(".contact-form").submit(async function(event){
-			event.preventDefault();
-			const {name, email, phone, message} = event.target.elements
-			
-			const res = await fetch('https://koreiskayadatcha-backend.onrender.com/send-mail', {
-				method: 'POST',
-				headers: {
-                   'Content-Type': 'application/json;charset=utf-8'
-  				},
-				body: JSON.stringify({name: name.value, email: email.value, phoneNumber: phone.value, message: message.value })
-			})
-
-			let result = await res.json()
-			alert(result.message)
-		})
 		});
-	
 	</script>
 </head>
 <body>
@@ -46,7 +30,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				<h1 class="logo_title" href="index.html">Корейская дача </h1> 
+				<br>
+				<h2 class="logo_subtitle">Корейская медицинская клиника</h2>
 			 </div>
 		   <div class="top-menu">
 		   	<span class="menu"> </span>
@@ -75,30 +61,107 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <article style="position: absolute; width: 100%; opacity: 0;"> 
 				   	<div class="banner-wrap">
 				   	       	<div class="banner_center">
-				   		 		<h1>hello world,</h1> 
-				   		 		<h2>i am <span>graphic & web designer</span></h2>
-				   		 		<h2>from morocco</h2>
+				   		 		<h2>정형외과</h2> 
+								<a href="./ortopediya.html">Ортопедия</a> 
 				   		 		</div>
 				   		 </div>
 					</article>
 				   <article style="position: relative; width: 100%; opacity: 1;"> 
 				   	   	<div class="banner-wrap">
 				   	      <div class="banner_center">
-				   		 		<h1>Content here,</h1> 
-				   		 		<h2>Lorem <span>graphic &  designer</span></h2>
-				   		 		<h2>Contrary</h2>
+				   		 		<h2>신경외과</h2> 
+								<h2>Неврология</h2>
 				   		 		</div>
 				   		  </div>
 				   </article>
 				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	  	<div class="banner-wrap">
+				   	  	<div class="banner-wrap derma">
 				   	       <div class="banner_center">
-				   		 		<h1>Lorem Ipsum ,</h1> 
-				   		 		<h2>Contrary to <span>&  designer</span></h2>
-				   		 		<h2>reproduced below</h2>
+				   		 		<h2>피부과</h2> 
+								<a href="./dermatology.html">Дерматология</a> 
 				   		 		</div>
 				   		 </div>
 					 </article>
+					 <article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-wrap">
+						 <div class="banner_center">
+							   <h2>성형외과</h2> 
+							   <h2>Пластическая хирургия</h2>
+							   </div>
+					   </div>
+				</article>
+				<article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="banner-wrap">
+					 <div class="banner_center">
+						   <h2>소아과</h2> 
+						   <h2>Педиатрия</h2> 
+						   </div>
+				   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>산부인과</h2> 
+					   <h2>Гинекология</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>내과</h2> 
+					   <h2>терапевтическое отделение</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>심장내과</h2> 
+					   <h2>кардиология</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>이비인후과</h2> 
+					   <h2>отоларингология</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>안과</h2> 
+					   <h2>офтальмология</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>치과</h2> 
+					   <h2>стоматология</h2> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>한방과</h2> 
+					   <a href="./vostochnaya.html">восточная медицина</a> 
+					   </div>
+			   </div>
+			</article>
+			<article style="position: absolute; width: 100%; opacity: 0;">
+				<div class="banner-wrap">
+				 <div class="banner_center">
+					   <h2>정신과</h2> 
+					   <h2>психиатрия</h2> 
+					   </div>
+			   </div>
+			</article>
 				 </div>
 				
             </div>
@@ -113,136 +176,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="about-section" id="about" id="about">
 	<div class="container">
 		<div class="about-header">
-			<h3>about</h3>
+			<h3>Бесплатные консультации</h3>
 			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt=""/>
+			<img src="images/about-image.jpg" alt=""/>
 			</div>
 			<div class="about-text">
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+					<p>
+						Независимо от вашего места нахождения и времени вы можете получить высоко профессиональные медицинские услуги онлайн прямо из Кореи</p> 
+					<p>
+						Если вы оставите на нашем сайте свои контактные данные и информацию с желаемым курсом лечения, то вы сможете обратиться к врачу по онлайн-видео. Если вам нужна операция, вы можете пройти предварительное лечение в корейской больнице. </p>
 			</div>
 			<div class="clearfix"></div>
 			</div>
-			<div class="about-sectiongrids">
-				<div class="col-md-6 about-leftgrid">
-					<div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Graphic Design</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Ui/Ux</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Logo Design</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Html/Css</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-
-	</div>
-	<div class="col-md-6 about-rightgrid">
-		<div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>web design</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>branding</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Photography</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Jquery</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
+	
 	<div class="arrow1">
 	<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
 					</div>
@@ -487,21 +433,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="#"><i class="icon8"></i></a>
 			</div>
 			<div class="contact">
-				<form class="contact-form">
+				<form>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value=" name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="phone" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
 					</div>
 					<div class="col-md-8 contactgrid1">
-						<textarea name="message" onfocus="if(this.value == 'Your Message')  this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
 					</div>
 					<div class="col-md-4 contactgrid2">
-						<button class="send-message" type="submit">send message</button>
+						<input type="submit" value="[send message]">
 					</div>
 				   <div class="clearfix"></div>
 				</form>
